@@ -1,16 +1,13 @@
 fileFormatVersion: 2
-guid: 60b3271eee5356d449328c98b15baa4d
+guid: dd9aa36433c967d498cacc4b0465460d
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -2461789438182278637
-    second: Hunter Sprite_0
+      213: -7733553347709513282
+    second: Hunter Idlet_0
   - first:
-      213: 4618547311681480536
-    second: Hunter Sprite_1
-  - first:
-      213: -3375102698426437803
-    second: Hunter Sprite_2
+      213: -6191517102359487404
+    second: Hunter Idlet_1
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -100,7 +97,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Hunter Sprite_0
+      name: Hunter Idlet_0
       rect:
         serializedVersion: 2
         x: 0
@@ -114,20 +111,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 31a36519c87f5ddd0800000000000000
-      internalID: -2461789438182278637
+      spriteID: eb1dd325436eca490800000000000000
+      internalID: -7733553347709513282
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Hunter Sprite_1
+      name: Hunter Idlet_1
       rect:
         serializedVersion: 2
         x: 7
-        y: 8
-        width: 3
-        height: 1
+        y: 0
+        width: 7
+        height: 11
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -135,29 +132,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8572c135f40681040800000000000000
-      internalID: 4618547311681480536
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Hunter Sprite_2
-      rect:
-        serializedVersion: 2
-        x: 7
-        y: 1
-        width: 3
-        height: 6
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 55f64d35af93921d0800000000000000
-      internalID: -3375102698426437803
+      spriteID: 45c5b1ddfff431aa0800000000000000
+      internalID: -6191517102359487404
       vertices: []
       indices: 
       edges: []

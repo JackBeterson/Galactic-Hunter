@@ -11,12 +11,18 @@ public class Shooting : MonoBehaviour
     public bool firing = false;
 
     public float bulletForce = 20;
+    public float shootCoolCounter;
 
     private void Update()
     {
-        if (firing)
+        if (firing == true)
         {
             Fireing();
+        }
+
+        if (shootCoolCounter > 0f)
+        {
+            shootCoolCounter -= Time.deltaTime;
         }
     }
 
@@ -24,14 +30,29 @@ public class Shooting : MonoBehaviour
     {
         if (context.performed)
         {
-            Fireing();
+            firing = true;
+        }
+
+        if (context.canceled)
+        {
+            firing = false;
         }
     }
 
     private void Fireing()
     {
+        if (shootCoolCounter <= 0f)
+        {
+            Shoot();
+        }
+    }
+
+    private void Shoot()
+    {
         GameObject bullet = Instantiate(bulletPrefab, firepoint.position, firepoint.rotation);
         Rigidbody2D bullertrb = bullet.GetComponent<Rigidbody2D>();
         bullertrb.AddForce(firepoint.up * bulletForce, ForceMode2D.Impulse);
+
+        shootCoolCounter = .5f;
     }
 }

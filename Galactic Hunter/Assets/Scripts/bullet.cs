@@ -6,10 +6,13 @@ public class bullet : MonoBehaviour
 {
     public GameObject hitEffect;
 
-    void OnCollisionEnter2D (Collision2D collision)
+    void OnTriggerEnter2D (Collider2D other)
     {
-        GameObject effect = Instantiate(hitEffect, transform.position, transform.rotation);
-        Destroy(effect, .2f);
-        Destroy(gameObject);
+        if (other.tag == "wall")
+        {
+            GameObject effect = Instantiate(hitEffect, transform.position, transform.rotation);
+            Destroy(effect, .2f);
+            Destroy(gameObject);
+        }
     }
 }
