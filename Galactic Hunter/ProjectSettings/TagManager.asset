@@ -5,6 +5,9 @@ TagManager:
   serializedVersion: 2
   tags:
   - wall
+  - bullet
+  - enemy
+  - slugBoss
   layers:
   - Default
   - TransparentFX
@@ -39,8 +42,17 @@ TagManager:
   - 
   - 
   m_SortingLayers:
+  - name: Tileset
+    uniqueID: 580390357
+    locked: 0
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: Trail
+    uniqueID: 753635883
+    locked: 0
+  - name: Enemy
+    uniqueID: 3283828803
     locked: 0
   - name: Player
     uniqueID: 2703002021

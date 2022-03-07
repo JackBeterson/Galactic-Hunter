@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
-public class Shooting : MonoBehaviour
+public class shooting : MonoBehaviour
 {
     public Transform firepoint;
     public GameObject bulletPrefab;

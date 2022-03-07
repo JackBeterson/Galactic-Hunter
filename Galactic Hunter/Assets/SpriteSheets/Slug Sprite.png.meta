@@ -1,19 +1,13 @@
 fileFormatVersion: 2
-guid: 60b3271eee5356d449328c98b15baa4d
+guid: 7a24dfad10daf1c47b8c0c1ce5470ce7
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -2461789438182278637
-    second: Hunter Sprite_0
+      213: 4386388308271524016
+    second: Slug Sprite_0
   - first:
-      213: 4618547311681480536
-    second: Hunter Sprite_1
-  - first:
-      213: -3375102698426437803
-    second: Hunter Sprite_2
-  - first:
-      213: 7045598143107981110
-    second: Hunter Sprite_3
+      213: -5623577796202422291
+    second: Slug Sprite_1
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -59,7 +53,7 @@ TextureImporter:
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
   spritePixelsToUnits: 8
-  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 5}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
   alphaIsTransparency: 1
@@ -103,85 +97,43 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Hunter Sprite_0
+      name: Slug Sprite_0
       rect:
         serializedVersion: 2
         x: 0
-        y: 5
-        width: 7
-        height: 11
+        y: 4
+        width: 8
+        height: 4
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 31a36519c87f5ddd0800000000000000
-      internalID: -2461789438182278637
+      spriteID: 0b863712de49fdc30800000000000000
+      internalID: 4386388308271524016
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Hunter Sprite_1
-      rect:
-        serializedVersion: 2
-        x: 7
-        y: 13
-        width: 3
-        height: 1
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 8572c135f40681040800000000000000
-      internalID: 4618547311681480536
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Hunter Sprite_2
-      rect:
-        serializedVersion: 2
-        x: 7
-        y: 6
-        width: 3
-        height: 6
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 55f64d35af93921d0800000000000000
-      internalID: -3375102698426437803
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Hunter Sprite_3
+      name: Slug Sprite_1
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 7
-        height: 4
+        width: 8
+        height: 3
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 63f5a169e2ef6c160800000000000000
-      internalID: 7045598143107981110
+      spriteID: def94921ac905f1b0800000000000000
+      internalID: -5623577796202422291
       vertices: []
       indices: 
       edges: []
