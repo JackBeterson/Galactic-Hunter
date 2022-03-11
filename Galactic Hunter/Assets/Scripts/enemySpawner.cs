@@ -7,9 +7,15 @@ public class enemySpawner : MonoBehaviour
 {
     //Wave
     [SerializeField] private Text txt;
-    private float wave = 1f;
+    [SerializeField] private Image img;
+    [SerializeField] private Color col;
+    private float wave = 4f;
     private float waveTimer = 10f;
     private float wIntervals = 10f;
+
+    [SerializeField] private Animator camAnimator;
+    [SerializeField] private Animator bossAnimator;
+    private bool bossFightStarted = false;
 
     //Spawn Enemy
     private bool spawnStarted = true;
@@ -19,33 +25,31 @@ public class enemySpawner : MonoBehaviour
     public Vector2 spawnJitter;
     public GameObject enemy;
 
-    void Start()
-    {
-        
-    }
-
     void Update()
     {
-        if (spawnTimer > 0)
+        if (!bossFightStarted)
         {
-            spawnTimer -= Time.deltaTime;
-        }
-        else if (spawnStarted && spawnTimer <= 0)
-        {
-            Spawn();
-        }
-
-        if (waveTimer > 0)
-        {
-            waveTimer -= Time.deltaTime;
-        }
-        else if (waveTimer <= 0)
-        {
-            EndWave();
-
-            if (numEnemys == 0)
+            if (spawnTimer > 0)
             {
-                StartWave();
+                spawnTimer -= Time.deltaTime;
+            }
+            else if (spawnStarted && spawnTimer <= 0)
+            {
+                Spawn();
+            }
+
+            if (waveTimer > 0)
+            {
+                waveTimer -= Time.deltaTime;
+            }
+            else if (waveTimer <= 0)
+            {
+                EndWave();
+
+                if (numEnemys == 0)
+                {
+                    StartWave();
+                }
             }
         }
     }
@@ -59,10 +63,11 @@ public class enemySpawner : MonoBehaviour
     {
         waveTimer = wIntervals;
         wave += 1;
-        txt.text = wave.ToString();
+        txt.text = ("WAVE " + wave.ToString());
         spawnStarted = true;
-        Debug.Log("start");
-        
+        StartCoroutine(WaveFadeout());
+        Invoke("FadeoutReset", 4.5f);
+
         if (wave == 5)
         {
             BossWave();
@@ -86,6 +91,29 @@ public class enemySpawner : MonoBehaviour
 
     private void BossWave()
     {
-        GetComponent<enemySpawner>().enabled = false;
+        bossFightStarted = true;
+        txt.text = ("BOSS WAVE");
+        camAnimator.Play("To Boss Fight");
+        bossAnimator.Play("Start Boss Fight");
+    }
+
+    private void FadeoutReset()
+    {
+        StopCoroutine(WaveFadeout());
+        img.color = new Color(1f, 1f, 1f, 0f);
+        txt.color = col * new Color(1f, 1f, 1f, 0f);
+    }
+
+    IEnumerator WaveFadeout()
+    {
+        for (int i = 0; i < 3f; i++)
+        {
+            img.color = Color.white;
+            txt.color = col;
+            yield return new WaitForSeconds(1f);
+            img.color = new Color(1f, 1f, 1f, .5f);
+            txt.color = col * new Color(1f, 1f, 1f, .5f);
+            yield return new WaitForSeconds(.5f);
+        }
     }
 }

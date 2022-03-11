@@ -8,7 +8,7 @@ public class bullet : MonoBehaviour
 
     void OnTriggerEnter2D (Collider2D other)
     {
-        if (other.tag == "wall")
+        if (other.tag != "Player")
         {
             GameObject effect = Instantiate(hitEffect, transform.position, transform.rotation);
             Destroy(effect, .2f);

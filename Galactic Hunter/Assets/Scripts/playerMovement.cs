@@ -9,7 +9,6 @@ public class playerMovement : MonoBehaviour
     [SerializeField] private Rigidbody2D armHinge;
     private Animator animator;
 
-    //[SerializeField] private Transform armJoint;
     [SerializeField] private Camera cam;
     public bool isFacingRight = true;
     public float horizontal;
@@ -59,8 +58,6 @@ public class playerMovement : MonoBehaviour
         armHinge.MoveRotation (angle);
 
         float diff = Mathf.Sign(rb.position.x - mousePos.x);
-
-        //Debug.Log(diff);
 
         if (!isFacingRight && diff < 0f)
         {

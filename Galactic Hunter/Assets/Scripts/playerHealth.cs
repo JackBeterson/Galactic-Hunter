@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class playerHealth : MonoBehaviour
 {
-    private float health = 1;
+    private float health = 3;
     public GameObject deathEffect;
     [SerializeField] private SpriteRenderer sprite;
     [SerializeField] private GameObject playerHurtbox;
@@ -25,13 +25,23 @@ public class playerHealth : MonoBehaviour
         StartCoroutine(DamageFlicker());
 
         health -= 1;
+        Invoke("DamageReset", 2.5f);
 
+        if (health == 2)
+        {
+            GameObject.Find("Head 3").SetActive(false);
+        }
+        else if (health == 1)
+        {
+            //GameObject.Find("Head 3").SetActive(false);
+            GameObject.Find("Head 2").SetActive(false);
+        }
         if (health == 0)
         {
+            GameObject.Find("Head 1").SetActive(false);
             Invoke("Death", 0f);
         }
 
-        Invoke("DamageReset", 2.5f);
     }
 
     private void DamageReset()
