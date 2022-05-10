@@ -5,23 +5,29 @@ using UnityEngine;
 public class slugBossAttack : StateMachineBehaviour
 {
     [SerializeField] private GameObject enemy;
+    private TrailRenderer trail;
     private Animator camAnimator;
     private Rigidbody2D rb;
-    private float attackTimer;
     private Transform hand;
+
     private float attacksDone;
+    private float attackTimer;
+
     // OnStateEnter is called when a transition starts and the state machine starts to evaluate this state
     override public void OnStateEnter(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
     {
         rb = GameObject.FindGameObjectWithTag("slugBoss").GetComponent<Rigidbody2D>();
         camAnimator = GameObject.Find("Main Camera").GetComponent<Animator>();
         hand = GameObject.Find("L Hand").GetComponent<Transform>();
+        trail = GameObject.Find("Trail").GetComponent<TrailRenderer>();
+
         attackTimer = .16f;
         attacksDone += 1f;
-        if (attacksDone == 6)
+        if (attacksDone == 2)
         {
             animator.Play("Follow Player");
             camAnimator.Play("Cam To Stage 2");
+            trail.enabled = true;
         }
     }
 
@@ -37,12 +43,6 @@ public class slugBossAttack : StateMachineBehaviour
             attackTimer = .33f;
             Flip();
         }
-    }
-
-    // OnStateExit is called when a transition ends and the state machine finishes evaluating this state
-    override public void OnStateExit(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
-    {
-        
     }
 
     private void Flip()

@@ -6,9 +6,10 @@ public class slugMovement : MonoBehaviour
 {
     [SerializeField] private Rigidbody2D rb;
     private Rigidbody2D targetrb;
+
     private float speed = -2f;
 
-    private void Start()
+    void Start()
     {
         targetrb = GameObject.Find("Player").GetComponent<Rigidbody2D>();
     }
@@ -16,30 +17,57 @@ public class slugMovement : MonoBehaviour
     void Update()
     {
         if (targetrb != null)
-        rb.velocity = new Vector2(Horizonta() * speed, Vertical() * speed);
-
-        if (Horizonta() > 0f)
         {
-            Vector3 localScale = transform.localScale;
-            localScale.x = 1f;
-            transform.localScale = localScale;
+            rb.velocity = new Vector2(Horizonta() * speed, Vertical() * speed);
+
+            if (Horizonta() > 0f)
+            {
+                Vector3 localScale = transform.localScale;
+                localScale.x = 1f;
+                transform.localScale = localScale;
+            }
+            else if (Horizonta() < 0f)
+            {
+                Vector3 localScale = transform.localScale;
+                localScale.x = -1f;
+                transform.localScale = localScale;
+            }
         }
-
-        if (Mathf.Sign(Horizonta()) < 0f)
+        else
         {
-            Vector3 localScale = transform.localScale;
-            localScale.x = -1f;
-            transform.localScale = localScale;
+            return;
         }
     }
 
     private float Horizonta()
     {
-        return Mathf.Sign(rb.position.x - targetrb.position.x);
+        if (rb.position.x - targetrb.position.x <= -0.1f)
+        {
+            return -1f;
+        }
+        else if (rb.position.x - targetrb.position.x >= 0.1f)
+        {
+            return 1f;
+        }
+        else
+        {
+            return 0f;
+        }
     }
 
     private float Vertical()
     {
-        return Mathf.Sign(rb.position.y - targetrb.position.y);
+        if (rb.position.y - targetrb.position.y <= -0.1f)
+        {
+            return -1f;
+        }
+        else if (rb.position.y - targetrb.position.y >= 0.1f)
+        {
+            return 1f;
+        }
+        else
+        {
+            return 0f;
+        }
     }
 }

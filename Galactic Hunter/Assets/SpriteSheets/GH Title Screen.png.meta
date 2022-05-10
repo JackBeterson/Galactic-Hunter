@@ -1,0 +1,663 @@
+fileFormatVersion: 2
+guid: a4c3113bebfe9684eb71c591ab887cb5
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 3354055599587621396
+    second: GH Title Screen_0
+  - first:
+      213: 5145574177901267465
+    second: GH Title Screen_1
+  - first:
+      213: 3247536518773299678
+    second: GH Title Screen_2
+  - first:
+      213: 5809480259276229808
+    second: GH Title Screen_3
+  - first:
+      213: 4281356000257060562
+    second: GH Title Screen_4
+  - first:
+      213: 9216299732027829189
+    second: GH Title Screen_5
+  - first:
+      213: 7193409312062239464
+    second: GH Title Screen_6
+  - first:
+      213: -6950046355349304090
+    second: GH Title Screen_7
+  - first:
+      213: -1220002131357930260
+    second: GH Title Screen_8
+  - first:
+      213: -7713662091942310215
+    second: GH Title Screen_9
+  - first:
+      213: 1763177133379584170
+    second: GH Title Screen_10
+  - first:
+      213: 6641525159966671149
+    second: GH Title Screen_11
+  - first:
+      213: -4040441189852758763
+    second: GH Title Screen_12
+  - first:
+      213: 2691874242455970137
+    second: GH Title Screen_13
+  - first:
+      213: -1698301450133134660
+    second: GH Title Screen_14
+  - first:
+      213: -4351209056096773903
+    second: GH Title Screen_15
+  - first:
+      213: 249824121597048843
+    second: GH Title Screen_16
+  - first:
+      213: -8895421437163242881
+    second: GH Title Screen_17
+  - first:
+      213: 2195865432046126187
+    second: GH Title Screen_18
+  - first:
+      213: -1667125586030447905
+    second: GH Title Screen_19
+  - first:
+      213: 7410453617473116303
+    second: GH Title Screen_20
+  - first:
+      213: 3971525484991436334
+    second: GH Title Screen_21
+  - first:
+      213: 4562184223359162505
+    second: GH Title Screen_22
+  - first:
+      213: 3363650757164284507
+    second: GH Title Screen_23
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 8
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: GH Title Screen_2
+      rect:
+        serializedVersion: 2
+        x: 103
+        y: 45
+        width: 35
+        height: 22
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ed95794f141911d20800000000000000
+      internalID: 3247536518773299678
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GH Title Screen_4
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 37
+        width: 35
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2de2f40499e6a6b30800000000000000
+      internalID: 4281356000257060562
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GH Title Screen_5
+      rect:
+        serializedVersion: 2
+        x: 35
+        y: 37
+        width: 35
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5cbeb07b6cfd6ef70800000000000000
+      internalID: 9216299732027829189
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GH Title Screen_6
+      rect:
+        serializedVersion: 2
+        x: 68
+        y: 37
+        width: 43
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8e2f47138af14d360800000000000000
+      internalID: 7193409312062239464
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GH Title Screen_7
+      rect:
+        serializedVersion: 2
+        x: 111
+        y: 37
+        width: 29
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6ec08e8a9a97c8f90800000000000000
+      internalID: -6950046355349304090
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GH Title Screen_8
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 28
+        width: 33
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cece03f768ea11fe0800000000000000
+      internalID: -1220002131357930260
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GH Title Screen_9
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 28
+        width: 33
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9bec164323193f490800000000000000
+      internalID: -7713662091942310215
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GH Title Screen_10
+      rect:
+        serializedVersion: 2
+        x: 69
+        y: 28
+        width: 43
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aa08e27d240187810800000000000000
+      internalID: 1763177133379584170
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GH Title Screen_11
+      rect:
+        serializedVersion: 2
+        x: 111
+        y: 28
+        width: 29
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d2102a6d1ff6b2c50800000000000000
+      internalID: 6641525159966671149
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GH Title Screen_12
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 19
+        width: 35
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 51d38fe15287de7c0800000000000000
+      internalID: -4040441189852758763
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GH Title Screen_13
+      rect:
+        serializedVersion: 2
+        x: 35
+        y: 19
+        width: 35
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 951ac918c557b5520800000000000000
+      internalID: 2691874242455970137
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GH Title Screen_14
+      rect:
+        serializedVersion: 2
+        x: 71
+        y: 19
+        width: 29
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cb2a84f34db6e68e0800000000000000
+      internalID: -1698301450133134660
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GH Title Screen_1
+      rect:
+        serializedVersion: 2
+        x: 73
+        y: 45
+        width: 28
+        height: 22
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 90a4a3fc370c86740800000000000000
+      internalID: 5145574177901267465
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GH Title Screen_15
+      rect:
+        serializedVersion: 2
+        x: 106
+        y: 19
+        width: 29
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1f893ebca666d93c0800000000000000
+      internalID: -4351209056096773903
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GH Title Screen_16
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 10
+        width: 35
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b08bd1807bd877300800000000000000
+      internalID: 249824121597048843
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GH Title Screen_17
+      rect:
+        serializedVersion: 2
+        x: 35
+        y: 10
+        width: 35
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f7a7d76355d1d8480800000000000000
+      internalID: -8895421437163242881
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GH Title Screen_0
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 45
+        width: 68
+        height: 22
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 41a745a1ccffb8e20800000000000000
+      internalID: 3354055599587621396
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GH Title Screen_18
+      rect:
+        serializedVersion: 2
+        x: 70
+        y: 10
+        width: 35
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b644babe9f7497e10800000000000000
+      internalID: 2195865432046126187
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GH Title Screen_19
+      rect:
+        serializedVersion: 2
+        x: 105
+        y: 10
+        width: 35
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fd2b0b0cc1e2dd8e0800000000000000
+      internalID: -1667125586030447905
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GH Title Screen_20
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1
+        width: 35
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f885ef58d4837d660800000000000000
+      internalID: 7410453617473116303
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GH Title Screen_21
+      rect:
+        serializedVersion: 2
+        x: 35
+        y: 1
+        width: 35
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e265355f261bd1730800000000000000
+      internalID: 3971525484991436334
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GH Title Screen_22
+      rect:
+        serializedVersion: 2
+        x: 71
+        y: 1
+        width: 29
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 988d6313162205f30800000000000000
+      internalID: 4562184223359162505
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GH Title Screen_23
+      rect:
+        serializedVersion: 2
+        x: 107
+        y: 2
+        width: 3
+        height: 5
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b5a3041da861eae20800000000000000
+      internalID: 3363650757164284507
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

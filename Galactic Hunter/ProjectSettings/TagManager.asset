@@ -18,9 +18,9 @@ TagManager:
   - Invisable
   - Untouchable
   - Slug Boss
-  - 
-  - 
-  - 
+  - Player
+  - Reverse Hunter
+  - Bullet
   - 
   - 
   - 
@@ -59,4 +59,10 @@ TagManager:
     locked: 0
   - name: Arm
     uniqueID: 1116343641
+    locked: 0
+  - name: Health Bar
+    uniqueID: 3706623031
+    locked: 0
+  - name: UI
+    uniqueID: 579596551
     locked: 0

@@ -7,23 +7,26 @@ public class playerMovement : MonoBehaviour
 {
     [SerializeField] private Rigidbody2D rb;
     [SerializeField] private Rigidbody2D armHinge;
-    private Animator animator;
-
+    [SerializeField] private Animator animator;
     [SerializeField] private Camera cam;
-    public bool isFacingRight = true;
-    public float horizontal;
-    public float vertical;
-    public float speed = 8f;
 
-    void Start()
-    {
-        animator = GetComponent<Animator>();
-    }
+    private Vector2 mousePos;
+
+    private bool isFacingRight = true;
+
+    private float horizontal;
+    private float vertical;
+    private float speed = 8f;
 
     void Update()
     {
         armHinge.position = rb.position;
+
+        Vector2 lookDir = mousePos - armHinge.position;
+        float angle = Mathf.Atan2(lookDir.y, lookDir.x) * Mathf.Rad2Deg;
+        armHinge.MoveRotation(angle);
     }
+
     public void Move(InputAction.CallbackContext context)
     {
         horizontal = context.ReadValue<Vector2>().x;
@@ -51,11 +54,7 @@ public class playerMovement : MonoBehaviour
 
     public void Aim(InputAction.CallbackContext context)
     {
-        Vector2 mousePos = cam.ScreenToWorldPoint(context.ReadValue<Vector2>());
-
-        Vector2 lookDir = mousePos - armHinge.position;
-        float angle = Mathf.Atan2(lookDir.y, lookDir.x) * Mathf.Rad2Deg;
-        armHinge.MoveRotation (angle);
+        mousePos = cam.ScreenToWorldPoint(context.ReadValue<Vector2>());
 
         float diff = Mathf.Sign(rb.position.x - mousePos.x);
 

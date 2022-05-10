@@ -4,15 +4,15 @@ using UnityEngine;
 
 public class bullet : MonoBehaviour
 {
-    public GameObject hitEffect;
+    [SerializeField] private GameObject hitEffect;
 
     void OnTriggerEnter2D (Collider2D other)
     {
-        if (other.tag != "Player")
+        if (!other.CompareTag("Player"))
         {
             GameObject effect = Instantiate(hitEffect, transform.position, transform.rotation);
-            Destroy(effect, .2f);
+            Destroy(effect, .4f);
             Destroy(gameObject);
-        }
+        }  
     }
 }

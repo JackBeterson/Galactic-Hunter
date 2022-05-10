@@ -5,6 +5,7 @@ using UnityEngine;
 public class slugBossRun : StateMachineBehaviour
 {
     private Rigidbody2D rb;
+
     private float xVel = 3f;
     private float flipTimmer;
     private float attackTimer;
@@ -21,7 +22,6 @@ public class slugBossRun : StateMachineBehaviour
     // OnStateUpdate is called on each Update frame between OnStateEnter and OnStateExit callbacks
     override public void OnStateUpdate(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
     {
-        
         rb.velocity = new Vector2(xVel, rb.velocity.y);
         flipTimmer -= Time.deltaTime;
         attackTimer -= Time.deltaTime;

@@ -5,13 +5,13 @@ using UnityEngine.InputSystem;
 
 public class shooting : MonoBehaviour
 {
-    public Transform firepoint;
-    public GameObject bulletPrefab;
+    [SerializeField] private Transform firepoint;
+    [SerializeField] private GameObject bulletPrefab;
 
-    public bool firing = false;
+    private bool firing = false;
 
-    public float bulletForce = 20;
-    public float shootCoolCounter;
+    private float bulletForce = 20;
+    private float shootCoolCounter;
 
     private void Update()
     {

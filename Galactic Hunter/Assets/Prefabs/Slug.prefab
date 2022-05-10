@@ -292,4 +292,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3f6cb1bc0aa4d3c41bccb178a1c1d5a1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  deathEffect: {fileID: 6656907253975806832, guid: 7ed16d7bc5c1f334184ccbf27c5a2be3, type: 3}
+  deathEffect: {fileID: 1414371479126353768, guid: 766e93fa746c7234d8892901caad65f6, type: 3}
+  sprite: {fileID: 639702223403603643}
