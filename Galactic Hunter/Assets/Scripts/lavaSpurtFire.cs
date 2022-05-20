@@ -18,6 +18,8 @@ public class lavaSpurtFire : StateMachineBehaviour
     // OnStateUpdate is called on each Update frame between OnStateEnter and OnStateExit callbacks
     override public void OnStateExit(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
     {
+        GameObject.Find("Game Manager").GetComponent<gameManager>().Play("Lava Shooting");
+
         GameObject bullet = Instantiate(bulletPrefab, firepoint.position, new Quaternion(0f, 0f, 0f, 0f));
         Rigidbody2D bullertrb = bullet.GetComponent<Rigidbody2D>();
         bullertrb.AddForce(firepoint.up * bulletForce, ForceMode2D.Impulse);

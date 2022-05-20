@@ -14,6 +14,7 @@ public class slugBossFollow : StateMachineBehaviour
     {
         rb = GameObject.FindGameObjectWithTag("slugBoss").GetComponent<Rigidbody2D>();
         targetrb = GameObject.Find("Player").GetComponent<Rigidbody2D>();
+        Destroy(GameObject.Find("Hands"));
     }
 
     // OnStateUpdate is called on each Update frame between OnStateEnter and OnStateExit callbacks
@@ -65,11 +66,11 @@ public class slugBossFollow : StateMachineBehaviour
 
     private float Horizonta()
     {
-        if (rb.position.x - targetrb.position.x <= -1)
+        if (rb.position.x - targetrb.position.x <= -.1f)
         {
             return -1f;
         }
-        else if (rb.position.x - targetrb.position.x >= 1)
+        else if (rb.position.x - targetrb.position.x >= .1f)
         {
             return 1f;
         }
@@ -80,11 +81,11 @@ public class slugBossFollow : StateMachineBehaviour
     }
     private float Vertical()
     {
-        if (rb.position.y - targetrb.position.y <= -1)
+        if (rb.position.y - targetrb.position.y <= -.1f)
         {
             return -1f;
         }
-        else if (rb.position.y - targetrb.position.y >= 1)
+        else if (rb.position.y - targetrb.position.y >= .1f)
         {
             return 1f;
         }

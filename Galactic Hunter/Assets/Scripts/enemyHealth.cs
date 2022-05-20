@@ -21,7 +21,10 @@ public class enemyHealth : MonoBehaviour
 
             health -= 1;
             Invoke("DamageReset", .25f);
-
+            if (health >= 1)
+            {
+                GameObject.Find("Game Manager").GetComponent<gameManager>().Play("Damage");
+            }
             if (health == 0)
             {
                 Death();
@@ -34,6 +37,8 @@ public class enemyHealth : MonoBehaviour
         GameObject effect = Instantiate(deathEffect, transform.position, transform.rotation);
         Destroy(effect, .5f);
         Destroy(gameObject);
+
+        GameObject.Find("Game Manager").GetComponent<gameManager>().Play("Death");
     }
 
     private void DamageReset()

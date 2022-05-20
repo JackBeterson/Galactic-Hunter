@@ -13,6 +13,10 @@ public class bullet : MonoBehaviour
             GameObject effect = Instantiate(hitEffect, transform.position, transform.rotation);
             Destroy(effect, .4f);
             Destroy(gameObject);
-        }  
+        }
+        if (other.CompareTag("wall"))
+        {
+            GameObject.Find("Game Manager").GetComponent<gameManager>().Play("Hit Wall");
+        }
     }
 }

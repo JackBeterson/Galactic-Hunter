@@ -7,13 +7,13 @@ EditorBuildSettings:
   m_Scenes:
   - enabled: 1
     path: Assets/Scenes/Title Screen.unity
-    guid: 552fd022a484327499c1956e1438e2ee
+    guid: 971c72eb17ee8ac4ca58c9ee2b5df6a7
   - enabled: 1
     path: Assets/Scenes/Game.unity
     guid: 2cda990e2423bbf4892e6590ba056729
   - enabled: 1
     path: Assets/Scenes/Loose Screen.unity
-    guid: 9da01714f952b0944b31ca9ffc104cf5
+    guid: f79f8146265272840a4b2f3d85e08b59
   - enabled: 1
     path: Assets/Scenes/Win Screen.unity
     guid: 7086e79b46636764daac565a00083bce

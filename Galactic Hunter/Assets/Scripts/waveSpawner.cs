@@ -48,7 +48,7 @@ public class waveSpawner : MonoBehaviour
 
         GameObject[] totalEnemies = GameObject.FindGameObjectsWithTag("enemy");
 
-        if (waves[currentWaveNumber].waveName == "Boss Wave" && totalEnemies.Length == 6 && !bossStarted)
+        if (waves[currentWaveNumber].waveName == "Boss Wave" && totalEnemies.Length == 10 && !bossStarted)
         {
             BossWave();
         }

@@ -54,5 +54,7 @@ public class shooting : MonoBehaviour
         bullertrb.AddForce(firepoint.up * bulletForce, ForceMode2D.Impulse);
 
         shootCoolCounter = .5f;
+
+        GameObject.Find("Game Manager").GetComponent<gameManager>().Play("Shooting");
     }
 }

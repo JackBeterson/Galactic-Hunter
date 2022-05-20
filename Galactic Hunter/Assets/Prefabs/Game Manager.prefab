@@ -45,7 +45,70 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   difficulty: 1
-  sounds: []
+  sounds:
+  - name: Shooting
+    clip: {fileID: 8300000, guid: af873e5b14361e346bcc344ea80f77a3, type: 3}
+    volume: 0.5
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+    group: {fileID: -619057836785855090, guid: 105e7b7cfebd1b842a26a1ef2ab12ca7, type: 2}
+  - name: Death
+    clip: {fileID: 8300000, guid: 9d64ac8651ba2344fa847edf595de329, type: 3}
+    volume: 0.2
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+    group: {fileID: -619057836785855090, guid: 105e7b7cfebd1b842a26a1ef2ab12ca7, type: 2}
+  - name: Damage
+    clip: {fileID: 8300000, guid: dc79cf747593c5e46b73cb09ed3bf38b, type: 3}
+    volume: 0.75
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+    group: {fileID: -619057836785855090, guid: 105e7b7cfebd1b842a26a1ef2ab12ca7, type: 2}
+  - name: Slug Boss Throw
+    clip: {fileID: 8300000, guid: 7d43d5b923598d842957bf994d381ec9, type: 3}
+    volume: 0.25
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+    group: {fileID: -619057836785855090, guid: 105e7b7cfebd1b842a26a1ef2ab12ca7, type: 2}
+  - name: Hit Wall
+    clip: {fileID: 8300000, guid: 9e9ad165988212b48b4b1ff07418e070, type: 3}
+    volume: 0.25
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+    group: {fileID: -619057836785855090, guid: 105e7b7cfebd1b842a26a1ef2ab12ca7, type: 2}
+  - name: Boss Damage
+    clip: {fileID: 8300000, guid: 0fb42b59db9ecc6429989082b68837d3, type: 3}
+    volume: 0.25
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+    group: {fileID: -619057836785855090, guid: 105e7b7cfebd1b842a26a1ef2ab12ca7, type: 2}
+  - name: Hit Bullet
+    clip: {fileID: 8300000, guid: da9a4128694c85946816846bd16e838d, type: 3}
+    volume: 0.25
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+    group: {fileID: -619057836785855090, guid: 105e7b7cfebd1b842a26a1ef2ab12ca7, type: 2}
+  - name: Music
+    clip: {fileID: 8300000, guid: 63cf5dd79e7ed814587a41900b0c9878, type: 3}
+    volume: 0.25
+    pitch: 1
+    loop: 1
+    source: {fileID: 0}
+    group: {fileID: -8435799870383995162, guid: 105e7b7cfebd1b842a26a1ef2ab12ca7, type: 2}
+  - name: Lava Shooting
+    clip: {fileID: 8300000, guid: 58dce37b1db8f514f85a774f52b8c279, type: 3}
+    volume: 0.25
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+    group: {fileID: -8435799870383995162, guid: 105e7b7cfebd1b842a26a1ef2ab12ca7, type: 2}
 --- !u!114 &6497612045111150196
 MonoBehaviour:
   m_ObjectHideFlags: 0

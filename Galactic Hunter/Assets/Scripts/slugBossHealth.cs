@@ -9,7 +9,15 @@ public class slugBossHealth : MonoBehaviour
     [SerializeField] private SpriteRenderer sprite;
     [SerializeField] private Slider slider;
 
-    private float health = 15;
+    private float health;
+    private float multiplier; 
+
+    void Start()
+    {
+        multiplier = GameObject.Find("Game Manager").GetComponent<gameManager>().difficulty;
+        health = 15 * multiplier;
+        slider.maxValue = health;
+    }
 
     private void OnTriggerEnter2D(Collider2D other)
     {
@@ -24,6 +32,7 @@ public class slugBossHealth : MonoBehaviour
         sprite.color = Color.red;
 
         health -= 1;
+        GameObject.Find("Game Manager").GetComponent<gameManager>().Play("Boss Damage");
         slider.value = health;
 
         Invoke("DamageReset", .25f);

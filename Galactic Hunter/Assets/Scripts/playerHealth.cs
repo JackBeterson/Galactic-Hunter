@@ -26,7 +26,7 @@ public class playerHealth : MonoBehaviour
         StartCoroutine(DamageFlicker());
 
         health -= 1;
-        Invoke("DamageReset", 2.5f);
+        GameObject.Find("Game Manager").GetComponent<gameManager>().Play("Damage");
 
         if (health >= 0)
         {
@@ -39,17 +39,15 @@ public class playerHealth : MonoBehaviour
         }
     }
 
-    private void DamageReset()
-    {
-        playerHurtbox.SetActive(true);
-        StopCoroutine(DamageFlicker());
-    }
-
     private void Death()
     {
         GameObject.Find("Game Manager").GetComponent<buttons>().Loss();
 
         GameObject.Find("Enemy Spawner").GetComponent<waveSpawner>().canSpawn = false;
+
+        GameObject.Find("Game Manager").GetComponent<gameManager>().Play("Death");
+
+        Destroy(GameObject.Find("ArmHinge"));
 
         GameObject[] enemies = GameObject.FindGameObjectsWithTag("enemy");
         for (int i = 0; i < enemies.Length; i++)
@@ -73,12 +71,13 @@ public class playerHealth : MonoBehaviour
 
     IEnumerator DamageFlicker()
     {
-        for (int i = 0; i < 3f; i++)
+        for (int i = 0; i < 5f; i++)
         {
-            sprite.color = new Color(1f, 1f, 1f, .5f);
+            sprite.color = Color.red; // new Color(1f, 1f, 1f, .5f);
             yield return new WaitForSeconds(.1f);
             sprite.color = Color.white;
             yield return new WaitForSeconds(.1f);
         }
+        playerHurtbox.SetActive(true);
     }
 }

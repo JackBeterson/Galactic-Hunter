@@ -53,12 +53,14 @@ public class gameManager : MonoBehaviour
             s.source.loop = s.loop;
         }
     }
-    /*
-    private void Start()
+    
+    void Start()
     {
+        GameObject.Find("Pixel Fadeout").GetComponent<Animator>().Play("Default");
+
         Play("Music");
     }
-    */
+    
     public void Play(string name)
     {
         sound s = Array.Find(sounds, sound => sound.name == name);

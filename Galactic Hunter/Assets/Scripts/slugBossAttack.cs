@@ -23,7 +23,7 @@ public class slugBossAttack : StateMachineBehaviour
 
         attackTimer = .16f;
         attacksDone += 1f;
-        if (attacksDone == 2)
+        if (attacksDone == 6)
         {
             animator.Play("Follow Player");
             camAnimator.Play("Cam To Stage 2");
@@ -42,6 +42,7 @@ public class slugBossAttack : StateMachineBehaviour
             Instantiate(enemy, spawnPos, Quaternion.identity);
             attackTimer = .33f;
             Flip();
+            GameObject.Find("Game Manager").GetComponent<gameManager>().Play("Slug Boss Throw");
         }
     }
 

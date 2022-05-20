@@ -537,7 +537,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 762235602}
+      - m_Target: {fileID: 702037123}
         m_TargetAssemblyTypeName: buttons, Assembly-CSharp
         m_MethodName: Menu
         m_Mode: 1
@@ -599,6 +599,7 @@ GameObject:
   - component: {fileID: 702037126}
   - component: {fileID: 702037125}
   - component: {fileID: 702037124}
+  - component: {fileID: 702037123}
   m_Layer: 5
   m_Name: Background
   m_TagString: Untagged
@@ -626,6 +627,18 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 128, y: 72}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &702037123
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 702037121}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0d0c147dc28854e43adba7c23e3817e4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!95 &702037124
 Animator:
   serializedVersion: 3
@@ -683,17 +696,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 702037121}
   m_CullTransparentMesh: 1
---- !u!114 &762235602 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 6497612045111150196, guid: 890eafff4ee4b004891fdd7bc8159637, type: 3}
-  m_PrefabInstance: {fileID: 1332602046}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0d0c147dc28854e43adba7c23e3817e4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1001 &917439590
 PrefabInstance:
   m_ObjectHideFlags: 0

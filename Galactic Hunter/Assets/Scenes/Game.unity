@@ -553,6 +553,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Game Manager
       objectReference: {fileID: 0}
+    - target: {fileID: 6497612045111150194, guid: 890eafff4ee4b004891fdd7bc8159637, type: 3}
+      propertyPath: sounds.Array.data[4].volume
+      value: 0.16
+      objectReference: {fileID: 0}
     - target: {fileID: 6497612045111150195, guid: 890eafff4ee4b004891fdd7bc8159637, type: 3}
       propertyPath: m_RootOrder
       value: 7
@@ -8657,6 +8661,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 454822008}
+  - component: {fileID: 454822009}
   m_Layer: 8
   m_Name: Hands
   m_TagString: Untagged
@@ -8680,6 +8685,32 @@ Transform:
   m_Father: {fileID: 1044400205}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!61 &454822009
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 454822007}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -0.0016319752, y: 0.00000047683716}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 3.4984112, y: 0.4945898}
+  m_EdgeRadius: 0
 --- !u!1 &489698964
 GameObject:
   m_ObjectHideFlags: 0
@@ -9214,7 +9245,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: 0.010987461, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -9225,7 +9256,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 3.5007887, y: 3}
+  m_Size: {x: 1.9845186, y: 3}
   m_EdgeRadius: 0
 --- !u!50 &1044400207
 Rigidbody2D:
@@ -10738,23 +10769,23 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   waves:
   - waveName: Wave 1
-    numberOfEnemies: 2
+    numberOfEnemies: 6
     typeOfEnemys:
     - {fileID: 2950642728509358616, guid: 5e2c3d07d2577c84db11beea2f48d014, type: 3}
     spawnInterval: 4
   - waveName: Wave 2
-    numberOfEnemies: 4
+    numberOfEnemies: 8
     typeOfEnemys:
     - {fileID: 2950642728509358616, guid: 5e2c3d07d2577c84db11beea2f48d014, type: 3}
     - {fileID: 2002375138769928047, guid: 42323a9f626b4a94a979e9614df16b57, type: 3}
     spawnInterval: 3
   - waveName: Wave 3
-    numberOfEnemies: 6
+    numberOfEnemies: 10
     typeOfEnemys:
     - {fileID: 5542568956469678667, guid: cd656edb8bb5e27408f21f3d58ca2caa, type: 3}
-    spawnInterval: 2
+    spawnInterval: 1
   - waveName: Wave 4
-    numberOfEnemies: 8
+    numberOfEnemies: 12
     typeOfEnemys:
     - {fileID: 2950642728509358616, guid: 5e2c3d07d2577c84db11beea2f48d014, type: 3}
     - {fileID: 2002375138769928047, guid: 42323a9f626b4a94a979e9614df16b57, type: 3}
@@ -10781,6 +10812,30 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 3185075318056877850, guid: 5353f5ffe573b4a449652f7a82cb4e46, type: 3}
+      propertyPath: m_ForceIntoRT
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3185075318056877850, guid: 5353f5ffe573b4a449652f7a82cb4e46, type: 3}
+      propertyPath: orthographic size
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 3185075318056877850, guid: 5353f5ffe573b4a449652f7a82cb4e46, type: 3}
+      propertyPath: m_NormalizedViewPortRect.x
+      value: 0.05244755
+      objectReference: {fileID: 0}
+    - target: {fileID: 3185075318056877850, guid: 5353f5ffe573b4a449652f7a82cb4e46, type: 3}
+      propertyPath: m_NormalizedViewPortRect.y
+      value: 0.05279503
+      objectReference: {fileID: 0}
+    - target: {fileID: 3185075318056877850, guid: 5353f5ffe573b4a449652f7a82cb4e46, type: 3}
+      propertyPath: m_NormalizedViewPortRect.width
+      value: 0.8951049
+      objectReference: {fileID: 0}
+    - target: {fileID: 3185075318056877850, guid: 5353f5ffe573b4a449652f7a82cb4e46, type: 3}
+      propertyPath: m_NormalizedViewPortRect.height
+      value: 0.89440995
+      objectReference: {fileID: 0}
     - target: {fileID: 8002432292731710609, guid: 5353f5ffe573b4a449652f7a82cb4e46, type: 3}
       propertyPath: m_RootOrder
       value: 1
@@ -10828,10 +10883,6 @@ PrefabInstance:
     - target: {fileID: 8002432292731710613, guid: 5353f5ffe573b4a449652f7a82cb4e46, type: 3}
       propertyPath: m_Name
       value: Main Camera
-      objectReference: {fileID: 0}
-    - target: {fileID: 8330899550590440208, guid: 5353f5ffe573b4a449652f7a82cb4e46, type: 3}
-      propertyPath: m_Enabled
-      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5353f5ffe573b4a449652f7a82cb4e46, type: 3}
